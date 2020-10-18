@@ -11,6 +11,7 @@
     <modules>
         <module>tensquare_common</module>
         <module>tensquare_article</module>
+        <module>mongo_demo</module>
     </modules>
 
     <parent>
