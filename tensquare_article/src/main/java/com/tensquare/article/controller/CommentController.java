@@ -5,6 +5,7 @@ import com.tensquare.article.service.CommentService;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,9 @@ public class CommentController {
 
     @Autowired
     private CommentService commentService;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     //GET /comment 查询所有评论
     @RequestMapping(method = RequestMethod.GET)
@@ -68,7 +72,17 @@ public class CommentController {
     //PUT /comment/thumbup/{commentId} 根据评论id点赞
     @RequestMapping(value = "/thumbup/{commentId}",method = RequestMethod.PUT)
     public Result thumbup(@PathVariable String commentId){
-        commentService.thumbup(commentId);
-        return new Result(true,StatusCode.OK,"点赞成功");
+        //把用户点赞信息存放到Redis中，禁止重复点赞
+        //模拟用户id
+        String userId = "123";
+
+        //判断查询到的结果是否为空
+        Object flag = redisTemplate.opsForValue().get("thumbup_" + userId + "_" + commentId);
+        if (flag==null){
+            redisTemplate.opsForValue().set("thumbup_" + userId + "_" + commentId,1);
+            commentService.thumbup(commentId);
+            return new Result(true,StatusCode.OK,"点赞成功");
+        }
+        return new Result(false,StatusCode.REPERROR,"重复点赞");
     }
 }

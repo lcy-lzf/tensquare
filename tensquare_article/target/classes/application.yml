@@ -13,6 +13,9 @@ spring:
       host: 182.92.204.73
       database: commentdb
       port: 27017 # 默认的，不配也可以
+  redis:
+    host: 182.92.204.73
+    port: 6379
 # Mybatis-Plus 配置
 mybatis-plus:
   #  mapper-locations: classpath:/mapper/*Mapper.xml
