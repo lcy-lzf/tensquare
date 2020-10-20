@@ -5,7 +5,7 @@ spring:
     name: tensqure-article
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://182.92.204.73:3306/tensquare_article?characterEncoding=utf-8
+    url: jdbc:mysql://182.92.204.73:3306/tensquare_article?characterEncoding=utf-8&useSSL=false
     username: root
     password: lcy5211314
   data:

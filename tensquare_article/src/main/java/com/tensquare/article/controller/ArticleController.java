@@ -1,14 +1,12 @@
 package com.tensquare.article.controller;
 
 import com.baomidou.mybatisplus.plugins.Page;
-import com.tensquare.article.dao.ArticleDao;
 import com.tensquare.article.pojo.Article;
 import com.tensquare.article.service.ArticleService;
 import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
