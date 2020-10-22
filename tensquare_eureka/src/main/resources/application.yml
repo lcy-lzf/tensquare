@@ -1,0 +1,11 @@
+server:
+  port: 6868
+spring:
+  application:
+    name: tensquare-eureka
+eureka:
+  client:
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/
+    register-with-eureka: false

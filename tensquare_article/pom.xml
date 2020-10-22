@@ -35,6 +35,10 @@
         </dependency>
         <!-- mybatis-plus end -->
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <!-- mongoDB -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
