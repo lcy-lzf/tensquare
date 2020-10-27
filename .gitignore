@@ -1,7 +1,2 @@
 .idea/libraries/
 .idea/modules.xml
-tensquare_article/src/test/
-tensquare_article/target/generated-sources/
-tensquare_common/src/test/
-tensquare_common/target/generated-sources/
-.class

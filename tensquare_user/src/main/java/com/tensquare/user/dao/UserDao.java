@@ -1,7 +1,7 @@
-package com.tensquare.encrypt.user.dao;
+package com.tensquare.user.dao;
 
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.tensquare.encrypt.user.pojo.User;
+import com.tensquare.user.pojo.User;
 
 public interface UserDao extends BaseMapper<User> {
 }

@@ -1,7 +1,7 @@
-package com.tensquare.encrypt.user.controller;
+package com.tensquare.user.controller;
 
-import com.tensquare.encrypt.user.pojo.User;
-import com.tensquare.encrypt.user.service.UserService;
+import com.tensquare.user.pojo.User;
+import com.tensquare.user.service.UserService;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ public class UserController {
     private UserService userService;
 
     //根据id查询用户
-    //http:127.0.0.1:9008/user/{userId}
+    //http://127.0.0.1:9008/user/{userId}
     @RequestMapping(value = "{userId}",method = RequestMethod.GET)
     public Result selectById(@PathVariable String userId){
         User user = userService.selectById(userId);

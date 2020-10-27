@@ -1,4 +1,4 @@
-package com.tensquare.encrypt.user;
+package com.tensquare.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

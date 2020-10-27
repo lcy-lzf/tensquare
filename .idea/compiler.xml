@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tensquare_notice" />
         <module name="tensquare_encrypt" />
         <module name="tensquare_common" />
         <module name="mongo_demo" />
@@ -22,6 +23,7 @@
       <module name="tensquare_common" target="1.8" />
       <module name="tensquare_encrypt" target="1.8" />
       <module name="tensquare_eureka" target="1.8" />
+      <module name="tensquare_notice" target="1.8" />
       <module name="tensquare_parent" target="1.8" />
       <module name="tensquare_user" target="1.8" />
     </bytecodeTargetLevel>
@@ -33,6 +35,7 @@
       <module name="tensquare_common" options="-parameters" />
       <module name="tensquare_encrypt" options="-parameters" />
       <module name="tensquare_eureka" options="-parameters" />
+      <module name="tensquare_notice" options="-parameters" />
       <module name="tensquare_user" options="-parameters" />
     </option>
   </component>

@@ -1,7 +1,7 @@
-package com.tensquare.encrypt.user.service;
+package com.tensquare.user.service;
 
-import com.tensquare.encrypt.user.dao.UserDao;
-import com.tensquare.encrypt.user.pojo.User;
+import com.tensquare.user.dao.UserDao;
+import com.tensquare.user.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

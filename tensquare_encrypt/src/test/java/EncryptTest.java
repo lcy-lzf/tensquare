@@ -39,4 +39,13 @@ public class EncryptTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void test() throws Exception{
+        String requestData = "KbhfadDcrQvEjWb1FPx7cATiddeWDW2Kpu+tncUsV7iwrFa8Giu6YPgRXKESCebyXkM6Tj64Bb8mtTck+MnjUvEsOcE7leJxAiEQTxmb96ZoEnDAgg8qWoFt24oyqOSlHCwFK0Kk8yjOwc78GdOEhvWVJNDz5PYa2nCnd0Eh5D/unz41EYdGdUEeNqJ+zfPxVMp0XkWFgYMu5QYRWYXzEq9Iwb/1z6x2eqTawZbBGyI4j6haJk4qqVa2VcgYPf0tuWgNub/aAyN3QntqKyZQ20Oi1JLtFFEaUCfmfj1zb0vXV88O1K/ffmuZdQByGIEcctvXwl8kM8Yh0+RSH45qSg==";
+
+        String decryptDataPEM = rsaService.RSADecryptDataPEM(requestData, RsaKeys.getServerPrvKeyPkcs8());
+
+        System.out.println(decryptDataPEM);
+    }
 }

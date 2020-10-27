@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/tensquare_common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tensquare_encrypt/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tensquare_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tensquare_notice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tensquare_user/src/main/java" charset="UTF-8" />
   </component>
 </project>
